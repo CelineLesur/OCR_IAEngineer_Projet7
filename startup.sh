@@ -16,6 +16,5 @@ echo "Environnement virtuel activé : $(which python)"
 
 pip install -r requirements.txt
 
-# Démarrer l'application FastAPI avec Uvicorn
-echo "Démarrage de l'application FastAPI avec uvicorn..."
-uvicorn main:app --reload
+# Démarrer l'application FastAPI
+python3 main.py
