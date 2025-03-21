@@ -1,0 +1,6 @@
+[build]
+language = "python" # ou un autre langage (par exemple, "node", "java")
+version = "3.11"     # Spécifiez la version du langage (par exemple, python 3.9)
+
+[azure]
+region = "canadacentral"
