@@ -5,6 +5,7 @@ import os
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 from contextlib import asynccontextmanager
 from azure.storage.blob import BlobServiceClient
+import torch.nn.functional as F
 
 # Configuration Azure
 AZURE_STORAGE_CONNECTION_STRING = "DefaultEndpointsProtocol=https;AccountName=stockp7;AccountKey=/pTx40p/d/Eu3Sv82DqddLJqRjc4f2HwEC2ZL0pKIztSX87XdhXEztc2GtFRa6J5CTTsgLC2anTQ+AStsaPofA==;EndpointSuffix=core.windows.net"
@@ -60,8 +61,12 @@ async def predict(request: Request, tweet: str):
     logits = outputs.logits
     prediction = torch.argmax(logits,dim=1).item()
 
+    # Calcul de la probabilité de la classe prédite
+    probabilities = F.softmax(logits,dim=1).squeeze().tolist()
+    prediction_proba = probabilities[prediction]
+
     return {"prediction": prediction,
-           "probabilité": logits}
+           "probabilité": prediction_proba}
 
 if __name__=='__main__' :
     import uvicorn
