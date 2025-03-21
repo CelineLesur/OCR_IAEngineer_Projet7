@@ -35,7 +35,7 @@ jobs:
           pip install pytest httpx
 
       - name: Run Tests with Pytest
-        run: pytests tests/
+        run: pytest tests/
         
       # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
 
