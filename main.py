@@ -60,7 +60,8 @@ async def predict(request: Request, tweet: str):
     logits = outputs.logits
     prediction = torch.argmax(logits,dim=1).item()
 
-    return {"prediction": prediction}
+    return {"prediction": prediction,
+           "probabilité": logits}
 
 if __name__=='__main__' :
     import uvicorn
