@@ -16,3 +16,29 @@ https://github.com/CelineLesur/OCR_IAEngineer_Projet7/blob/main/P7_EDA.ipynb
 https://github.com/CelineLesur/OCR_IAEngineer_Projet7/blob/main/P7_modele_base.ipynb
 
 https://github.com/CelineLesur/OCR_IAEngineer_Projet7/blob/main/P7_modele_avance.ipynb
+
+
+Découpage des dossiers :
+📂 /
+
+app.py → Code principal de l’API Flask/FastAPI
+
+model/ → Contient le modèle de prédiction (fichiers .pkl ou .h5)
+
+requirements.txt → Liste des packages nécessaires
+
+config.py → Paramètres de configuration
+
+📂 notebooks/
+
+exploration.ipynb → Analyse exploratoire des données
+
+train_model.ipynb → Entraînement et évaluation des modèles
+
+📂 test/
+
+mlflow_tracking/ → Gestion des expériences avec MLflow
+
+ci_cd/ → Scripts pour le pipeline CI/CD (GitHub Actions, tests unitaires)
+
+monitoring/ → Intégration de la surveillance avec Azure Application Insights
