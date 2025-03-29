@@ -21,13 +21,13 @@ https://github.com/CelineLesur/OCR_IAEngineer_Projet7/blob/main/P7_modele_avance
 Découpage des dossiers :
 📂 /
 
-app.py → Code principal de l’API Flask/FastAPI
+main.py → Code principal de l’API FastAPI
 
-model/ → Contient le modèle de prédiction (fichiers .pkl ou .h5)
+startup.sh → Code de démarrage d'Azure
 
 requirements.txt → Liste des packages nécessaires
 
-config.py → Paramètres de configuration
+oryx-manifest.toml → Métadonnées sur le déploiement
 
 📂 notebooks/
 
