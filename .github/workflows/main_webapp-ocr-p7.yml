@@ -98,4 +98,5 @@ jobs:
           app-name: 'webapp-ocr-p7'
           slot-name: 'Production'
           package: ./release.zip
+          overwrite: true
           
