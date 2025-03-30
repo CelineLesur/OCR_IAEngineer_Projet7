@@ -98,5 +98,4 @@ jobs:
           app-name: 'webapp-ocr-p7'
           slot-name: 'Production'
           package: ./release.zip
-          runtime-stack: "PYTHON|3.11"
           
