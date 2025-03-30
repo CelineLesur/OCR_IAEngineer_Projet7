@@ -51,17 +51,10 @@ test_api.py → Tests unitaires
 
 Python 3.11
 
-#### Virtual environment
-
-# python -m venv env
-# > or just :
-make venv
-source env/bin/activate
-
 #### Dependencies
 
-# pip install kaggle jupyterlab ipykernel ipywidgets widgetsnbextension graphviz python-dotenv requests matplotlib seaborn plotly numpy
-# > or :
-# pip install -r requirements.txt
-# > or just :
-make install
+- fastapi - version : 0.115.11
+- torch (https://download.pytorch.org/whl/cpu)
+- transformers - version : 4.49.0
+- azure-storage-blob
+- uvicorn
