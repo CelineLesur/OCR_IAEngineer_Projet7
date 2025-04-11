@@ -1,0 +1,6 @@
+streamlit
+requests
+opencensus-ext-azure
+opencensus-ext-requests
+azure-monitor-opentelemetry
+dotenv
