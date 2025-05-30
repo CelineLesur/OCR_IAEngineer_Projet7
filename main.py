@@ -8,8 +8,8 @@ from azure.storage.blob import BlobServiceClient
 import torch.nn.functional as F
 
 # Configuration Azure
-AZURE_STORAGE_CONNECTION_STRING = "DefaultEndpointsProtocol=https;AccountName=stockp7;AccountKey=/pTx40p/d/Eu3Sv82DqddLJqRjc4f2HwEC2ZL0pKIztSX87XdhXEztc2GtFRa6J5CTTsgLC2anTQ+AStsaPofA==;EndpointSuffix=core.windows.net"
-CONTAINER_NAME = "contp7"
+AZURE_STORAGE_CONNECTION_STRING = "DefaultEndpointsProtocol=xxxxxxx;AccountName=xxxx;AccountKey=/xx/xxx/xxxxxxxxxxxxxx;EndpointSuffix=xxxx"
+CONTAINER_NAME = "xxxxx"
 MODEL_BLOB_PREFIX = ""
 LOCAL_MODEL_DIR = "D:/tutorial-env/OCR/Projet7/APImodel"
 
